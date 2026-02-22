@@ -1,5 +1,5 @@
 # Ingress para o Init Container Demo
-# Adicione "127.0.0.1 nginx-init.local" no arquivo /etc/hosts
+# Adicione "ip node kubernetes -- nginx-init.local" no arquivo /etc/hosts
 # Adicione addons ingress no kubernetes
 apiVersion: networking.k8s.io/v1
 kind: Ingress
