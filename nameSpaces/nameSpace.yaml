@@ -1,0 +1,24 @@
+# Namespaces são usados para organizar e isolar recursos no cluster
+# Comando: kubectl create namespace <nome>
+#
+# Para criar todos os namespaces: kubectl apply -f base/namespaces.yaml
+# Criando uma lista de namespaces gerais para uso em pods
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: getting-started
+  labels:
+    purpose: pod-debug
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: flask-app
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: init-container
